@@ -55,3 +55,33 @@ input {
     align-items: flex-start;
     justify-content: center;
 }
+
+          .raibow {
+            margin: 0;
+            height: 100vh;
+            /* Define a animação: nome, duração, tipo, repetição */
+            animation: raibow 10s infinite alternate;
+          }
+        
+          @keyframes raibow {
+            0% { background-color: rgb(255, 100, 100); }    /* Vermelho claro */
+            33% { background-color: rgb(100, 255, 100); }   /* Verde claro */
+            66% { background-color: rgb(100, 100, 255); }   /* Azul claro */
+            100% { background-color: rgb(255, 255, 100); }  /* Amarelo claro */
+          }
+
+          .textraibow {
+            animation: textcolor 10s infinite alternate;
+          }
+
+          @keyframes textcolor {
+            0% { color: rgb(255, 255, 100); }  /* Amarelo claro */
+            33% { color: rgb(100, 100, 255); }   /* Azul claro */
+            66% { color: rgb(255, 100, 100); }    /* Vermelho claro */
+            100% { color: rgb(100, 255, 100); }   /* Verde claro */
+           
+            
+          }
+
+        
+          
