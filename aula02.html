@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aula02 - menu hamburguer</title>
+        <link rel="stylesheet" href="rainbow.css">
 
         <style>
             .navbar {
@@ -22,13 +23,52 @@
                 margin: 0px;
                 padding: 0px;
 
-                
             }
+
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+            }
+
+            .hamburguer{
+                display: none;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+            }
+            
+            @media screen and (max-width: 768px){
+
+                .hamburguer{
+                    display: block;
+                }
+
+                .nav-links{
+                    display: none;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 60px;
+                    left: 0;
+                    width: 100%;
+                    background-color: 333;
+                    text-align: center;
+                    padding: 20px 0;
+                }
+
+                .nav-links.active{
+                    display: flex;
+                }
+
+            }
+
         </style>
 
     </head>
 
-    <body>
+    <body class="rainbow">
 
         <nav class="navbar">
             <div class="logo">Meu site</div>
@@ -56,9 +96,13 @@
         </nav>
         
         <div style="padding: 20px;">
-            <h1>Conteúdo da página</h1>
-            <p>Redimensione a janela do navegador para ver o menu mudar.</p>
+            <h1 class="text-rainbow">Conteúdo da página</h1>
+            <p class="text-rainbow">Redimensione a janela do navegador para ver o menu mudar.</p>
         </div>
-
-    </body>
+        <script>
+            alert("anjos sem paciencia!!!")
+            
+        </script>
+   </body>
+  
 </html>
