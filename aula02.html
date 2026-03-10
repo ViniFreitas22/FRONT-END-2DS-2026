@@ -9,6 +9,11 @@
         <style>
             .navbar {
                 background-color: black;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+                
             }
             .logo {
                 color: white;
@@ -47,6 +52,7 @@
                 }
 
                 .nav-links{
+                    background-color: black;
                     display: none;
                     flex-direction: column;
                     position: absolute;
@@ -63,12 +69,13 @@
                 }
 
             }
+            
 
         </style>
 
     </head>
 
-    <body class="rainbow">
+    <body >
 
         <nav class="navbar">
             <div class="logo">Meu site</div>
@@ -96,12 +103,16 @@
         </nav>
         
         <div style="padding: 20px;">
-            <h1 class="text-rainbow">Conteúdo da página</h1>
-            <p class="text-rainbow">Redimensione a janela do navegador para ver o menu mudar.</p>
+            <h1>Conteúdo da página</h1>
+            <p>Redimensione a janela do navegador para ver o menu mudar.</p>
         </div>
         <script>
-            alert("anjos sem paciencia!!!")
-            
+            const hamburguerBtn = document.getElementById('hamburguer-btn');
+            const navLinks = document.getElementById('nav-links');
+
+            hamburguerBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            })
         </script>
    </body>
   
