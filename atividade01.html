@@ -1,41 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3 caixas centralizadas</title>
+    <title>3 Quadrados</title>
+
     <style>
-        body{
-            width: 100%;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            margin: 0;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
         }
-        .caixa{
+
+        .container {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            gap: 30px;
         }
-        .caixa_numero{
+
+        .square {
+            width: 150px;
+            height: 150px;
+            background-color: #0083db;
+            border: 3px solid #000000;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .square:nth-child(2) {
+            background-color: #dbef00;
+        }
+
+        .square:nth-child(3) {
+            background-color: #b300ff;
+        }
+
+        .number {
+            font-size: 60px;
+            font-weight: bold;
             color: white;
-            height: 100px;
-            width: 100px;
-            background-color: blue;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <div class="caixa">
-        <div class="caixa_numero">1</div>
-        <div class="caixa_numero">2</div>
-        <div class="caixa_numero">3</div>
+    <div class="container">
+        <div class="square">
+            <span class="number">1</span>
+        </div>
+        <div class="square">
+            <span class="number">2</span>
+        </div>
+        <div class="square">
+            <span class="number">3</span>
+        </div>
     </div>
 </body>
 </html>
