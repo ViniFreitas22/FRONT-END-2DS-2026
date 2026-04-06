@@ -1,26 +1,40 @@
+.wave {
+    background-size: 200% 100%;
+    animation: wave-continuous 10s linear infinite;
+}
 
-.rainbow {
-    margin: 0;
-    height: 100vh;
-    animation: rainbow 10s infinite alternate;
-  }
+@keyframes wave-continuous {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -200% 0%;
+    }
+}
+.zoom {
+    background-size: 150% 150%; 
+    background-position: center;
+    animation: pulsar-fundo 2s ease-in-out infinite alternate;
+}
 
-  @keyframes rainbow {
-    0% { background-color: rgb(255, 100, 100); }   
-    33% { background-color: rgb(100, 255, 100); }  
-    66% { background-color: rgb(100, 100, 255); }   
-    100% { background-color: rgb(255, 255, 100); }  
-  }
+@keyframes pulsar-fundo {
+    0% {
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    100% {
+        background-size: 150% 150%;
+        background-position: center;
+    }
+}
 
-  .text-rainbow {
-    animation: text-rainbow 10s infinite alternate;
-  }
-
-  @keyframes text-rainbow {
-    0% { color: rgb(255, 255, 100); } 
-    33% { color: rgb(100, 100, 255); }   
-    66% { color: rgb(255, 100, 100); }    
-    100% { color: rgb(100, 255, 100); }   
-  }
-
-  
+/* 
+.text-rainbow {
+    background: linear-gradient(90deg, #ff6464, #64ff64, #6464ff, #ffff64, #ff6464);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: wave-continuous 10s linear infinite;
+    display: inline-block;
+} */

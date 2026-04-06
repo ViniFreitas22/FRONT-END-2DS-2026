@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(100deg, #000000 0%, hsl(270, 100%, 67%) 100%);
+    background: linear-gradient(90deg, #000000 0%, hsl(270, 100%, 67%) 50%,#000000 100%);
 }
 
 .form-container{
@@ -22,10 +22,6 @@ body{
     max-width: 400px;
     text-align: center;
     transition: transform 0.5 ease;
-}
-
-.form-container:hover{
-    transform: translateY(-5px);
 }
 
 .form-container h2 {
@@ -75,7 +71,7 @@ body{
 button {
     width: 100%;
     padding:  12px;
-    background: linear-gradient(to right, #667eea, #764ba2);
+    background: linear-gradient(to right, #667eea, #764ba2,#667eea);
     color: white;
     border: none;
     border-radius: 8px;
