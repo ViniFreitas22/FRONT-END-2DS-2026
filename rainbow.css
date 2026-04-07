@@ -1,4 +1,4 @@
-.wave {
+ .wave {
     background-size: 200% 100%;
     animation: wave-continuous 10s linear infinite;
 }
@@ -14,7 +14,7 @@
 .zoom {
     background-size: 150% 150%; 
     background-position: center;
-    animation: pulsar-fundo 2s ease-in-out infinite alternate;
+    animation: pulsar-fundo 2s infinite alternate;
 }
 
 @keyframes pulsar-fundo {
@@ -26,7 +26,7 @@
         background-size: 150% 150%;
         background-position: center;
     }
-}
+} 
 
 /* 
 .text-rainbow {
@@ -37,4 +37,26 @@
     color: transparent;
     animation: wave-continuous 10s linear infinite;
     display: inline-block;
+} */
+/* 
+.zoom {
+     Define o tamanho da imagem (ex: 25% da largura do container) 
+     Se quiser que ela apareça no tamanho original, use 'auto' ou um valor em px 
+    background-size: contain; 
+    background-repeat: repeat;  Isso faz com que a imagem se repita 
+    background-position: center;
+    animation: pulsar-fundo 2s infinite alternate;
+}
+
+@keyframes pulsar-fundo {
+    0% {
+        /* Controla a escala da repetição 
+        background-size: 200px auto;
+        background-position: center;
+    }
+    100% {
+         Aumenta levemente para dar o efeito de pulsar sem esticar a imagem toda 
+        background-size: 250px auto; 
+        background-position: center;
+    }
 } */
