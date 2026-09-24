@@ -28,7 +28,7 @@ body {
     width: 90%;
     height: 100px;
     padding: 10px;
-    background-image: url(nyan\ cat.gif);
+    background-color: rgb(0, 255, 229);
     background-size: contain; 
     background-repeat: repeat;
     display: flex;
